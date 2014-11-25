@@ -4,15 +4,20 @@ angular.module('shortly.services', [])
   // Your code here
   // this will get the url
   var getLinks= function(){
+    return $http({
+      method: 'GET',
+      url: '/api/links'
+    })
   };
   var addLink = function(url){
     return $http({
       method: 'POST',
-      url: '/',
+      url: '/api/links',
       data: url
     })
     .then(function (resp) {
-      return url;
+       console.log('resp'+resp)
+      return resp;
     });
   };
 

@@ -3,6 +3,7 @@
   <div>
     <input ng-model="url">
     <button ng-click="addLink(url)">add a link</button>
-    <div> {{ link }} </div>
+    <button ng-click="getLinks()">get a link</button>
+    <div> {{ data.links }} </div>
   </div>
 </div>
