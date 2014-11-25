@@ -1,5 +1,8 @@
-<div id='container'>
+<div id='container' ng-app='shortly'>
   <!-- Your html here -->
-    <div ng-view></div>
-
+  <div>
+    <input ng-model="url">
+    <button ng-click="addLink(url)">add a link</button>
+    <div> {{ link }} </div>
+  </div>
 </div>
