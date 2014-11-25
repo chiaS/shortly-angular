@@ -8,9 +8,10 @@ angular.module('shortly', [
 .config(function($routeProvider, $httpProvider) {
 
   $routeProvider
-    .when('/', {
-      template: '<h1>Hello World</h1>'
-    })
+    // .when('/', {
+    //   templateUrl: 'app/shorten/shorten.html',
+    //   controller: 'ShortenController'
+    // })
     .when('/signin', {
       templateUrl: 'app/auth/signin.html',
       controller: 'AuthController'

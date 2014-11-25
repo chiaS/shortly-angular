@@ -3,7 +3,8 @@ angular.module('shortly.links', [])
 .controller('LinksController', function ($scope, Links) {
   // Your code here
   $scope.data = {
-    links: []
+    links: [],
+    hello: 'hello, Silvia!'
   };
 
   ($scope.getLinks = function(){

@@ -1,9 +1,11 @@
 <div id='container'>
 <!-- Your code here -->
+  <div><h1>Can haz shorter URL?!</h1></div>
   <div>
-    <input ng-model="newLink">
-    <button ng-click="addLink(newLink)">add a link</button>
-    <div> {{ link }} </div>
+    <input ng-model="link.url">
+    <button class='btn' ng-click="addLink()">
+      <a href='http://localhost:3000/#/links'>add a link</a>
+    </button>
   </div>
 </div>
 
