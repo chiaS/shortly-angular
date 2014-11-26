@@ -8,9 +8,11 @@
     <ul>
       <li  class='fx-fade-down fx-speed-100' ng-repeat = 'link in data.links  | filter:url'>
         Title: {{link.title}}
-        <div><a href={{link.url}}>
-          http://localhost:3000/api/links/{{link.code}}
-        </a></div>
+        <div>
+        <a href={{link.url}}>http://localhost:3000/api/links/{{link.code}}
+        <div>visits: {{ link.visits }}</div>
+        </a>
+        </div>
       </li>
     </ul>
     <div>{{ data.hello }}</div>

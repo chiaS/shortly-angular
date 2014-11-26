@@ -18,6 +18,8 @@ angular.module('shortly.links', [])
   //$scope.data.links = res.data;
   ($scope.getLinks = function(){
     var links = Links.getLinks().then(function (res) {
+
+      $scope.data.links = [];
       res.data.forEach(function(link, delay){
         $timeout(push(link), delay*175);
       });
