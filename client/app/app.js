@@ -3,7 +3,8 @@ angular.module('shortly', [
   'shortly.services',
   'shortly.links',
   'shortly.shorten',
-  'shortly.auth'
+  'shortly.auth',
+  'ngFx'
 ])
 .config(function($routeProvider, $httpProvider) {
 

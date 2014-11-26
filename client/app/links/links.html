@@ -2,12 +2,11 @@
   <!-- Your html here -->
   <div>
     <input ng-model="url">
-    <!-- <button ng-click="addLink(url)">add a link</button> -->
-    <button class='btn'><a href='http://localhost:3000/#/shorten'>Shorten link</a></button>
-    <button class='btn' ng-click="getLinks()"><a>get a link</a></button>
+    <button class='btn btn-lg btn-success btn-default'><a href='http://localhost:3000/#/shorten'>Shorten link</a></button>
+    <button class='btn btn-lg btn-success btn-default' ng-click="getLinks()"><a>get a link</a></button>
     <div ng-init='data.links'> </div>
     <ul>
-      <li ng-repeat = 'link in data.links'>
+      <li  class='fx-fade-down fx-speed-100' ng-repeat = 'link in data.links  | filter:url'>
         Title: {{link.title}}
         <div><a href={{link.url}}>
           http://localhost:3000/api/links/{{link.code}}
